@@ -4,7 +4,7 @@
 
 ChocoBliss is a premium chocolate e-commerce website showcasing handcrafted chocolates made with the finest ingredients. The website offers a delightful user experience for chocolate enthusiasts to browse and purchase artisanal chocolate products.
 
-!!!
+## !!!
 Note: This repository contains only partial code. The complete project, including the backend, admin portal, and API integrations, is private. For access, please contact me via http://nishchay.online.
 
 ## Preview
