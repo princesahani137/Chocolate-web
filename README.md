@@ -6,17 +6,15 @@ ChocoBliss is a premium chocolate e-commerce website showcasing handcrafted choc
 
 ## Preview
 
-### Hero Section
-![Chocolate Hero](./public/images/chocolate-hero.jpg)
+##Landing
+![Landing](./src/assets/one.png)
 
-### Featured Products
-![Truffle Box](./public/images/truffle-box.jpg)
-![Milk Chocolate Box](./public/images/milk-chocolate-box.jpg)
-![Hazelnut Bars](./public/images/hazelnut-bars.jpg)
-![White Chocolate Berry](./public/images/white-chocolate-berry.jpg)
+## Products Page
+![Products Page](./src/assets/three.png)
 
-### Chocolate Making Process
-![Chocolate Making](./public/images/chocolate-making.jpg)
+## Join Our Community
+![Join Our Community](./src/assets/two.png)
+
 
 ## Features
 
