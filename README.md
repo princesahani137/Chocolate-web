@@ -6,7 +6,7 @@ ChocoBliss is a premium chocolate e-commerce website showcasing handcrafted choc
 
 ## Preview
 
-##Landing
+## Landing
 ![Landing](./src/assets/one.png)
 
 ## Products Page
