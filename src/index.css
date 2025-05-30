@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Lato:wght@300;400;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 25% 98%;
+    --foreground: 20 15% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 15% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 15% 15%;
+
+    --primary: 25 60% 31%;
+    --primary-foreground: 30 25% 98%;
+
+    --secondary: 30 30% 96%;
+    --secondary-foreground: 25 60% 31%;
+
+    --muted: 30 10% 92%;
+    --muted-foreground: 20 10% 40%;
+
+    --accent: 40 80% 57%;
+    --accent-foreground: 20 15% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 20 10% 85%;
+    --input: 20 10% 85%;
+    --ring: 25 60% 31%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-lato;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair;
+  }
+}
+
+@layer components {
+  .chocolate-button {
+    @apply bg-chocolate-700 hover:bg-chocolate-800 text-white font-medium py-2.5 px-6 rounded-md transition-all duration-300 shadow-md hover:shadow-lg;
+  }
+  
+  .gold-button {
+    @apply bg-gold-500 hover:bg-gold-600 text-chocolate-900 font-medium py-2.5 px-6 rounded-md transition-all duration-300 shadow-md hover:shadow-lg;
+  }
+  
+  .section-title {
+    @apply font-playfair text-3xl md:text-4xl lg:text-5xl font-bold text-chocolate-800;
+  }
+  
+  .section-subtitle {
+    @apply font-lato text-lg text-chocolate-600 mt-2 mb-8;
+  }
+}
