@@ -5,7 +5,7 @@
 ChocoBliss is a premium chocolate e-commerce website showcasing handcrafted chocolates made with the finest ingredients. The website offers a delightful user experience for chocolate enthusiasts to browse and purchase artisanal chocolate products.
 
 ## Note ! 
-This repository contains only partial code. The complete project, including the backend, admin portal, and API integrations, is private. For access, please contact me via http://nishchay.online.
+This repository contains only partial code. The complete project, including the backend, admin portal, and API integrations, is private. For access, please contact Tarun.
 
 ## Preview
 
@@ -43,7 +43,7 @@ Follow these steps to run the project locally:
 
 ```sh
 # Step 1: Clone the repository
-git clone https://github.com/nish340/chocobliss-e-commerce.git
+git clone https://github.com/tarun/chocobliss-e-commerce.git
 
 # Step 2: Navigate to the project directory
 cd chocobliss
@@ -80,7 +80,7 @@ npm run preview
 
 ## Author
 
-Nishchay Sharma
+Tarun
 
 ## License
 

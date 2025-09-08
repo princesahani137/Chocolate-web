@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "author": "Nishchay Sharma",
+  "author": "Tarun",
   "description": "Premium handcrafted chocolate e-commerce website",
   "scripts": {
     "dev": "vite",
