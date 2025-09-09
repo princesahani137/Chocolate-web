@@ -2,6 +2,9 @@
 import { Button } from "@/components/ui/button";
 import { ShoppingBag, Star, Heart } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import { useCart } from "@/contexts/CartContext";
+import { useToast } from "@/hooks/use-toast";
 import { cn } from "@/lib/utils";
 
 // Sample product data
@@ -47,6 +50,21 @@ const products = [
 // Product card component
 const ProductCard = ({ product }: { product: typeof products[0] }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const { addItem } = useCart();
+  const { toast } = useToast();
+  
+  const handleAddToCart = () => {
+    addItem({
+      id: product.id,
+      name: product.name,
+      price: product.price,
+      image: product.image
+    });
+    toast({
+      title: "Added to cart!",
+      description: `${product.name} has been added to your cart.`,
+    });
+  };
   
   return (
     <div 
@@ -82,12 +100,14 @@ const ProductCard = ({ product }: { product: typeof products[0] }) => {
       </div>
       
       <div className="p-5 space-y-3">
-        <h3 className="font-playfair font-bold text-xl text-chocolate-800">{product.name}</h3>
+        <Link to={`/product/${product.id}`}>
+          <h3 className="font-playfair font-bold text-xl text-chocolate-800 hover:text-chocolate-600 transition-colors cursor-pointer">{product.name}</h3>
+        </Link>
         <p className="text-sm text-chocolate-600 line-clamp-2">{product.description}</p>
         
         <div className="pt-3 flex items-center justify-between">
           <span className="font-bold text-lg text-chocolate-900">${product.price.toFixed(2)}</span>
-          <Button className="chocolate-button flex items-center gap-2 text-sm py-1.5">
+          <Button onClick={handleAddToCart} className="chocolate-button flex items-center gap-2 text-sm py-1.5">
             <ShoppingBag className="w-4 h-4" />
             Add to Cart
           </Button>
@@ -136,9 +156,11 @@ const FeaturedProducts = () => {
         </div>
         
         <div className="text-center mt-16">
-          <Button className="gold-button px-8 py-3 text-base">
-            View All Chocolates
-          </Button>
+          <Link to="/products">
+            <Button className="gold-button px-8 py-3 text-base">
+              View All Chocolates
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
