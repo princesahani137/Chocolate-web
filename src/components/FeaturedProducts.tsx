@@ -38,7 +38,7 @@ const products = [
     name: "White Chocolate Berry Fusion",
     description: "Creamy white chocolate with real berry pieces",
     price: 29.95,
-    image: "https://images.unsplash.com/photo-1615394695852-097971f07cb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    image: "https://images.unsplash.com/photo-1497729019230-f30736e9864f?q=80&w=1150&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     rating: 4.7,
     category: "assorted"
   }

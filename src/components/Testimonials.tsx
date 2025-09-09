@@ -144,7 +144,7 @@ const Testimonials = () => {
                 variant="outline" 
                 size="icon" 
                 onClick={handlePrevious}
-                className="rounded-full border-white/30 text-white hover:bg-white/10 hover:border-white"
+                className="rounded-full border-white/30 text-white bg-brown hover:bg-white/10 hover:border-white hover:text-brown"
               >
                 <ArrowLeft className="h-5 w-5" />
               </Button>
@@ -152,7 +152,7 @@ const Testimonials = () => {
                 variant="outline" 
                 size="icon" 
                 onClick={handleNext}
-                className="rounded-full border-white/30 text-white hover:bg-white/10 hover:border-white"
+                className="rounded-full border-white/30 text-white bg-brown hover:bg-white/10 hover:border-white hover:text-brown"
               >
                 <ArrowRight className="h-5 w-5" />
               </Button>
