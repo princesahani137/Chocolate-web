@@ -11,15 +11,41 @@ const Cart = () => {
   const shipping = subtotal > 50 ? 0 : 5.99;
   const total = subtotal + shipping;
 
-  const handleCheckout = () => {
-    if (items.length === 0) return;
-    
-    toast({
-      title: "Order Placed!",
-      description: `Your order of $${total.toFixed(2)} has been placed successfully.`,
+  const handleCheckout = async () => {
+  if (items.length === 0) return;
+
+  try {
+    // create order on server
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/create-order`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ amount: total }) // total from your cart
     });
-    clearCart();
-  };
+    const order = await res.json();
+
+    const options = {
+      key: import.meta.env.VITE_RAZORPAY_KEY_ID, // test key id (safe to expose client-side)
+      amount: order.amount,
+      currency: order.currency,
+      name: "Your Chocolate Store",
+      description: "Order payment",
+      order_id: order.id,
+      handler: (response: any) => {
+        // response contains razorpay_payment_id, razorpay_order_id, razorpay_signature
+        toast({ title: "Payment succeeded", description: `Payment ID: ${response.razorpay_payment_id}` });
+        clearCart();
+        // Optionally call server to verify signature / mark order paid
+      },
+      prefill: { name: "", email: "", contact: "" }
+    };
+
+    const rzp = new (window as any).Razorpay(options);
+    rzp.open();
+  } catch (err) {
+    console.error(err);
+    toast({ title: "Payment failed", description: String(err) });
+  }
+};
 
   return (
     <Sheet>
