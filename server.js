@@ -1,6 +1,6 @@
-// server/server.js
+// server/server.js (Razorpay portion)
 import express from "express";
-import Stripe from "stripe";
+import Razorpay from "razorpay";
 import cors from "cors";
 import dotenv from "dotenv";
 dotenv.config();
@@ -9,30 +9,21 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+const razorpay = new Razorpay({
+  key_id: process.env.RAZORPAY_KEY_ID,
+  key_secret: process.env.RAZORPAY_KEY_SECRET,
+});
 
-app.post("/create-checkout-session", async (req, res) => {
+app.post("/create-order", async (req, res) => {
   try {
-    const { items } = req.body; // expect [{ id, name, price, quantity, ... }]
-    const line_items = items.map(i => ({
-      price_data: {
-        currency: "usd",
-        product_data: { name: i.name },
-        unit_amount: Math.round(i.price * 100)
-      },
-      quantity: i.quantity
-    }));
-
-    const session = await stripe.checkout.sessions.create({
-      payment_method_types: ["card"],
-      mode: "payment",
-      line_items,
-      success_url: process.env.SUCCESS_URL,
-      cancel_url: process.env.CANCEL_URL
-    });
-
-    // Return the hosted checkout URL
-    res.json({ url: session.url });
+    const { amount, currency = "INR", receipt } = req.body;
+    const options = {
+      amount: Math.round(amount * 100), // INR paise
+      currency,
+      receipt: receipt || `rcpt_${Date.now()}`,
+    };
+    const order = await razorpay.orders.create(options);
+    res.json(order);
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: err.message });
