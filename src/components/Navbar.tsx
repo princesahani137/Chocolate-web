@@ -50,7 +50,7 @@ const Navbar = () => {
               "text-2xl font-playfair font-bold transition-colors duration-300",
               isScrolled ? "text-chocolate-800" : "text-chocolate-800"
             )}>
-              Chocolate<span className="text-gold-500">Bliss</span>
+              Tru<span className="text-gold-500">fl</span>
             </span>
           </Link>
         </div>
