@@ -141,7 +141,7 @@ const Cart = () => {
               </div>
               
               <div className="space-y-2">
-                <Button onClick={handleCheckout} className="w-full chocolate-button">
+                <Button onClick=window.location.href='https://youtube.com'>
                   Checkout
                 </Button>
                 <Button variant="outline" className="w-full">
