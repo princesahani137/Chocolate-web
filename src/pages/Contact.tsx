@@ -72,9 +72,9 @@ const Contact = () => {
                         <div>
                           <h3 className="font-semibold text-chocolate-800 mb-1">Visit Our Store</h3>
                           <p className="text-chocolate-600">
-                            123 Chocolate Avenue<br />
-                            Sweet City, SC 12345<br />
-                            United States
+                            278-B <br />
+                            Govindpuri Gali no.4<br />
+                            Delhi
                           </p>
                         </div>
                       </div>
@@ -90,8 +90,8 @@ const Contact = () => {
                         <div>
                           <h3 className="font-semibold text-chocolate-800 mb-1">Call Us</h3>
                           <p className="text-chocolate-600">
-                            +1 (555) 123-4567<br />
-                            Mon-Fri: 9AM-6PM EST
+                            +91 9220460644<br />
+                          
                           </p>
                         </div>
                       </div>
@@ -107,8 +107,8 @@ const Contact = () => {
                         <div>
                           <h3 className="font-semibold text-chocolate-800 mb-1">Email Us</h3>
                           <p className="text-chocolate-600">
-                            hello@chocobliss.com<br />
-                            support@chocobliss.com
+                            hello@gmail.com<br />
+                            support@choco.com
                           </p>
                         </div>
                       </div>
