@@ -33,8 +33,7 @@ const productData = {
       protein: 8,
       sugar: 40
     }
-  }
-}
+  },
  7: {
     id: 7,
     name: "Shivam Sahani",
