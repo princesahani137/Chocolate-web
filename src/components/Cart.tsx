@@ -8,7 +8,7 @@ const Cart = () => {
   const { items, updateQuantity, removeItem, totalItems, subtotal, clearCart } = useCart();
   const { toast } = useToast();
   
-  const shipping = subtotal > 50 ? 0 : 5.99;
+  const shipping = subtotal > 500 ? 0 : 5.99;
   const total = subtotal + shipping;
 
   const handleCheckout = async () => {
