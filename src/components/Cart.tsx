@@ -139,6 +139,10 @@ const Cart = () => {
                   <span className="text-chocolate-800">${total.toFixed(2)}</span>
                 </div>
               </div>
+               <div>
+                    <label className="block text-sm font-medium text-chocolate-700 mb-2">Coupon Code</label>
+                    <Input placeholder="Coupon code" />
+                  </div>
               
               <div className="space-y-2">
                <a href="https://wa.me/9220460644?text=Hii Trufl!!">
