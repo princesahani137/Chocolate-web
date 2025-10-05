@@ -64,7 +64,7 @@ const products = [
     image: "https://images.unsplash.com/photo-1606312619070-d48b4c652a52?ixlib=rb-4.0.3&auto=format&fit=crop&w=1287&q=80",
     rating: 5,
     category: "assorted"
-  }
+  },
    {
     id: 7,
     name: "Shivam Sahani",
