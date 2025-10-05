@@ -90,7 +90,7 @@ const ProductCard = ({ product }: { product: typeof products[0] }) => {
     });
     toast({
       title: "Added to cart!",
-      description: `${product.name} has been added to your cart.`,
+      description: `₹{product.name} has been added to your cart.`,
     });
   };
   
