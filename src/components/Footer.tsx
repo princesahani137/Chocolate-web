@@ -71,8 +71,8 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-xl mb-4 font-playfair">Contact Us</h4>
             <address className="not-italic text-chocolate-300 space-y-3 text-sm">
-              <p>278-B</p>
-              <p>Govindpuri gali no.4, Delhi 54321</p>
+              <p></p>
+              <p></p>
               <p className="pt-2">
                 <a href="https://wa.me/9220460644" className="hover:text-gold-300 transition-colors">
                   +91 9220460644
