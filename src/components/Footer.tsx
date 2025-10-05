@@ -88,7 +88,9 @@ const Footer = () => {
               Contact Us
             </Button>
 <h4 className="font-bold text-xl mb-4 font-playfair">Fssai Code</h4>
-        <p>23325010002896</p>            
+      <a href="#" className="hover:text-gold-300 transition-colors">       
+        <p>23325010002896</p>
+        </a>
           </div>
         </div>
         {/* Bottom Bar */}
