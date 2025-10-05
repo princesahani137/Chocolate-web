@@ -142,7 +142,7 @@ const Cart = () => {
               
               <div className="space-y-2">
                <a href="https://youtube.com">
-               <button\> Checkout </button>
+               <button> Checkout </button>
                 </a>
                 <Button variant="outline" className="w-full">
                   Continue Shopping
