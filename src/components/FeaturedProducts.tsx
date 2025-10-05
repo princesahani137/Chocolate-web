@@ -100,7 +100,7 @@ const ProductCard = ({ product }: { product: typeof products[0] }) => {
       </div>
       
       <div className="p-5 space-y-3">
-        <Link to={`/product/₹{product.id}`}>
+        <Link to={`/product/${product.id}`}>
           <h3 className="font-playfair font-bold text-xl text-chocolate-800 hover:text-chocolate-600 transition-colors cursor-pointer">{product.name}</h3>
         </Link>
         <p className="text-sm text-chocolate-600 line-clamp-2">{product.description}</p>
