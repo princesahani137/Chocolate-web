@@ -43,7 +43,7 @@ const productData = {
     images: [
       "https://t4.ftcdn.net/jpg/01/17/35/17/360_F_117351782_ugRMzKUg8pz8ucKVqIPI1JzQSCItC0Hx.jpg",
       "https://cdn.britannica.com/47/276247-050-33B62CB6/Donkey-in-a-field.jpg"],
-    rating: 1p0,
+    rating: 100,
     reviews: 127,
     category: "truffles",
     inStock: false,
