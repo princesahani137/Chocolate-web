@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 const testimonials = [
   {
     id: 1,
-    name: "Emily Johnson",
+    name: "Shila ki javani",
     role: "Chocolate Enthusiast",
     content: "These are by far the best chocolates I've ever tasted! The flavors are so rich and complex. I ordered the dark chocolate truffles for my anniversary, and they were the perfect gift.",
     avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80",
