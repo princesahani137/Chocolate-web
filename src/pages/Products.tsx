@@ -15,8 +15,8 @@ const products = [
     id: 1,
     name: "Dark Chocolate Truffles",
     description: "Rich dark chocolate ganache dusted with cocoa powder",
-    price: 24.99,
-    image: "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=1169&q=80",
+    price: 25,
+    image: "https://raw.githubusercontent.com/princesahani137/Chocolate-web/refs/heads/main/public/images/WhatsApp%20Image%202025-10-06%20at%2012.35.05%20AM.jpeg",
     rating: 5,
     category: "truffles"
   },
