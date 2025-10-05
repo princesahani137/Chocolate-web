@@ -8,34 +8,34 @@ import { cn } from "@/lib/utils";
 const testimonials = [
   {
     id: 1,
-    name: "Shila ki javani",
+    name: "Shila Verma",
     role: "Chocolate Enthusiast",
     content: "These are by far the best chocolates I've ever tasted! The flavors are so rich and complex. I ordered the dark chocolate truffles for my anniversary, and they were the perfect gift.",
-    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80",
+    avatar: "https://femina.wwmindia.com/thumb/content/2021/sep/women-thumb1632797644.jpg?width=1200&height=900",
     rating: 5
   },
   {
     id: 2,
-    name: "Michael Chen",
+    name: "Mohan Singh",
     role: "Corporate Client",
     content: "We ordered custom chocolate gifts for our clients during the holidays, and the response was phenomenal. The packaging was elegant, and everyone raved about the quality. Will definitely order again next year!",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80",
+    avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFAOzTeCpivOfuPAkY_sujuk-_lBAhFRHkug&s",
     rating: 5
   },
   {
     id: 3,
-    name: "Sarah Williams",
+    name: "Ramesh Mohan",
     role: "Food Blogger",
     content: "As someone who reviews desserts professionally, I can honestly say these chocolates are outstanding. The attention to detail in each piece is evident, and the flavor combinations are innovative yet classic.",
-    avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1322&q=80",
+    avatar: "https://english.cdn.zeenews.com/sites/default/files/2017/11/17/639329-indian-men.jpg",
     rating: 5
   },
   {
     id: 4,
-    name: "David Rodriguez",
+    name: "Mohit Singh",
     role: "Gift Shopper",
     content: "My mother is very particular about her chocolates, and these passed her test with flying colors! The gift box presentation was beautiful, and the chocolates were fresh and delicious.",
-    avatar: "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1176&q=80",
+    avatar: "https://img.freepik.com/free-photo/closeup-young-hispanic-man-casuals-studio_662251-600.jpg?semt=ais_hybrid&w=740&q=80",
     rating: 4
   }
 ];
