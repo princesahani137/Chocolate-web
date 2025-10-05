@@ -138,20 +138,16 @@ const Cart = () => {
                   <span className="text-chocolate-800">Total</span>
                   <span className="text-chocolate-800">${total.toFixed(2)}</span>
                 </div>
-              </div>
-              
-            <div>
+                 <div>
                     <label className="block text-sm font-medium text-chocolate-700 mb-2">Last Name</label>
                     <Input placeholder="Your last name" />
                   </div>
-              
+              </div>
               <div className="space-y-2">
                <a href="https://wa.me/9220460644?text=Hii Trufl!!">
                <Button variant="outline" className="w-full"> Checkout </Button>
                 </a>
-                <Button variant="outline" className="w-full">
-                  Continue Shopping
-                </Button>
+            
               </div>
             </div>
           )}
