@@ -72,8 +72,8 @@ const Contact = () => {
                         <div>
                           <h3 className="font-semibold text-chocolate-800 mb-1">Visit Our Store</h3>
                           <p className="text-chocolate-600">
-                            278-B <br />
-                            Govindpuri Gali no.4<br />
+                             <br />
+                            <br />
                             Delhi
                           </p>
                         </div>
