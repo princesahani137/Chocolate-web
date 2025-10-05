@@ -62,7 +62,7 @@ const ProductCard = ({ product }: { product: typeof products[0] }) => {
     });
     toast({
       title: "Added to cart!",
-      description: `${product.name} has been added to your cart.`,
+      description: `₹{product.name} has been added to your cart.`,
     });
   };
   
@@ -100,13 +100,13 @@ const ProductCard = ({ product }: { product: typeof products[0] }) => {
       </div>
       
       <div className="p-5 space-y-3">
-        <Link to={`/product/${product.id}`}>
+        <Link to={`/product/₹{product.id}`}>
           <h3 className="font-playfair font-bold text-xl text-chocolate-800 hover:text-chocolate-600 transition-colors cursor-pointer">{product.name}</h3>
         </Link>
         <p className="text-sm text-chocolate-600 line-clamp-2">{product.description}</p>
         
         <div className="pt-3 flex items-center justify-between">
-          <span className="font-bold text-lg text-chocolate-900">${product.price.toFixed(2)}</span>
+          <span className="font-bold text-lg text-chocolate-900">₹{product.price.toFixed(2)}</span>
           <Button onClick={handleAddToCart} className="chocolate-button flex items-center gap-2 text-sm py-1.5">
             <ShoppingBag className="w-4 h-4" />
             Add to Cart
