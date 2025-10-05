@@ -65,6 +65,15 @@ const products = [
     rating: 5,
     category: "assorted"
   }
+   {
+    id: 7,
+    name: "Shivam Sahani",
+    description: "Shivam Sahani pada hag ke khata jhada",
+    price: 0,
+    image: "https://upload.wikimedia.org/wikipedia/commons/1/1a/Donkey_in_Clovelly%2C_North_Devon%2C_England.jpg",
+    rating: 5,
+    category: "assorted"
+  }
 ];
 
 const ProductCard = ({ product }: { product: typeof products[0] }) => {
