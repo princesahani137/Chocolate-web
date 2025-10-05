@@ -80,7 +80,7 @@ const Footer = () => {
               </p>
               <p>
                 <a href="mailto:mail@gmail.com" className="hover:text-gold-300 transition-colors">
-                  mail@gmail.com
+                  chocolatetrufl@gmail.com
                 </a>
               </p>
             </address>
@@ -94,7 +94,7 @@ const Footer = () => {
         <div className="pt-8 border-t border-chocolate-800 mt-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-chocolate-400 text-sm">
-              &copy; {currentYear} Chocolate Bliss. All rights reserved.
+              &copy; {currentYear} Trufl. All rights reserved.
             </p>
             <div className="flex gap-4 mt-4 md:mt-0">
               <a href="#" className="text-xs text-chocolate-400 hover:text-gold-300 transition-colors">
