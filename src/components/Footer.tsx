@@ -89,7 +89,7 @@ const Footer = () => {
             </Button>
 <h4 className="font-bold text-xl mb-4 font-playfair">Fssai Code</h4>
       <a href="#" className="hover:text-gold-300 transition-colors">       
-        <p>23325010002896</p>
+        <p className="pt-2">23325010002896</p>
         </a>
           </div>
         </div>
