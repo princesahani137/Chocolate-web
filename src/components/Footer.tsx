@@ -34,7 +34,7 @@ const Footer = () => {
                 href="https://wa.me/9220460644" 
                 className="w-10 h-10 flex items-center justify-center rounded-full bg-chocolate-800 hover:bg-chocolate-700 transition-colors"
               >
-                <Whatsapp className="w-5 h-5 text-white" />
+                <Twitter className="w-5 h-5 text-white" />
               </a>
             </div>
           </div>
