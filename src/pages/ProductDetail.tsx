@@ -41,9 +41,8 @@ const productData = {
     longDescription: "Indulge in our signature dark chocolate truffles, crafted with 70% Belgian dark chocolate and infused with premium vanilla. Each truffle is hand-rolled and dusted with the finest cocoa powder, creating a luxurious melt-in-your-mouth experience.",
     price: 0.99,
     images: [
-      "https://t4.ftcdn.net/jpg/01/17/35/17/360_F_117351782_ugRMzKUg8pz8ucKVqIPI1JzQSCItC0Hx.jpg"
-      "https://cdn.britannica.com/47/276247-050-33B62CB6/Donkey-in-a-field.jpg"
-    ],
+      "https://t4.ftcdn.net/jpg/01/17/35/17/360_F_117351782_ugRMzKUg8pz8ucKVqIPI1JzQSCItC0Hx.jpg",
+      "https://cdn.britannica.com/47/276247-050-33B62CB6/Donkey-in-a-field.jpg"],
     rating: 1p0,
     reviews: 127,
     category: "truffles",
