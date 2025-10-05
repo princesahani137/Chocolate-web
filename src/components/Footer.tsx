@@ -12,7 +12,7 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="space-y-4">
             <h3 className="font-playfair text-2xl font-bold">
-              Chocolate<span className="text-gold-500">Bliss</span>
+              Tru<span className="text-gold-500">fl</span>
             </h3>
             <p className="text-chocolate-300 text-sm pr-4">
               Crafting premium chocolates with the finest ingredients since 1995. Every bite is an unforgettable experience.
@@ -25,16 +25,16 @@ const Footer = () => {
                 <Facebook className="w-5 h-5 text-white" />
               </a>
               <a 
-                href="#" 
+                href="https://instagram.com/tufl_chocolate" 
                 className="w-10 h-10 flex items-center justify-center rounded-full bg-chocolate-800 hover:bg-chocolate-700 transition-colors"
               >
                 <Instagram className="w-5 h-5 text-white" />
               </a>
               <a 
-                href="#" 
+                href="https://wa.me/9220460644" 
                 className="w-10 h-10 flex items-center justify-center rounded-full bg-chocolate-800 hover:bg-chocolate-700 transition-colors"
               >
-                <Twitter className="w-5 h-5 text-white" />
+                <Whatsapp className="w-5 h-5 text-white" />
               </a>
             </div>
           </div>
@@ -71,16 +71,16 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-xl mb-4 font-playfair">Contact Us</h4>
             <address className="not-italic text-chocolate-300 space-y-3 text-sm">
-              <p>123 Cocoa Avenue</p>
-              <p>Sweet Town, CH 54321</p>
+              <p>278-B</p>
+              <p>Govindpuri gali no.4, Delhi 54321</p>
               <p className="pt-2">
-                <a href="tel:+15551234567" className="hover:text-gold-300 transition-colors">
-                  +1 555 123 4567
+                <a href="https://wa.me/9220460644" className="hover:text-gold-300 transition-colors">
+                  +91 9220460644
                 </a>
               </p>
               <p>
-                <a href="mailto:hello@chocolatebliss.com" className="hover:text-gold-300 transition-colors">
-                  hello@chocolatebliss.com
+                <a href="mailto:mail@gmail.com" className="hover:text-gold-300 transition-colors">
+                  mail@gmail.com
                 </a>
               </p>
             </address>
