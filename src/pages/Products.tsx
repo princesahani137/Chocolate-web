@@ -134,7 +134,7 @@ const ProductCard = ({ product }: { product: typeof products[0] }) => {
         <p className="text-sm text-chocolate-600 line-clamp-2">{product.description}</p>
         
         <div className="pt-3 flex items-center justify-between">
-          <span className="font-bold text-lg text-chocolate-900">${product.price.toFixed(2)}</span>
+          <span className="font-bold text-lg text-chocolate-900">₹{product.price.toFixed(2)}</span>
           <Button onClick={handleAddToCart} className="chocolate-button flex items-center gap-2 text-sm py-1.5">
             <ShoppingBag className="w-4 h-4" />
             Add to Cart
