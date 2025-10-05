@@ -34,6 +34,7 @@ const productData = {
       sugar: 40
     }
   }
+}
  7: {
     id: 7,
     name: "Shivam Sahani",
