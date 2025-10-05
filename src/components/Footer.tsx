@@ -87,9 +87,10 @@ const Footer = () => {
             <Button className="mt-4 gold-button text-chocolate-900 text-sm">
               Contact Us
             </Button>
+<h4 className="font-bold text-xl mb-4 font-playfair">Fssai Code</h4>
+        <p>23325010002896</p>            
           </div>
         </div>
-        
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-chocolate-800 mt-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
