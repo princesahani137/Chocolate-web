@@ -82,7 +82,7 @@ const ProductDetail = () => {
     
     toast({
       title: "Added to cart!",
-      description: `₹{quantity} x ₹{product.name} added to your cart.`,
+      description: `${quantity} x ${product.name} added to your cart.`,
     });
     
     setQuantity(1);
@@ -156,7 +156,7 @@ const ProductDetail = () => {
                 <p className="text-chocolate-600 mb-6">{product.longDescription}</p>
                 
                 <div className="text-3xl font-bold text-chocolate-800 mb-6">
-                  ₹{product.price.toFixed(2)}
+                  ${product.price.toFixed(2)}
                 </div>
               </div>
 
@@ -202,7 +202,7 @@ const ProductDetail = () => {
                 <div className="text-center">
                   <Truck className="w-6 h-6 mx-auto text-chocolate-600 mb-2" />
                   <p className="text-xs text-chocolate-600">Free Shipping</p>
-                  <p className="text-xs text-chocolate-500">On orders over ₹50</p>
+                  <p className="text-xs text-chocolate-500">On orders over $50</p>
                 </div>
                 <div className="text-center">
                   <Shield className="w-6 h-6 mx-auto text-chocolate-600 mb-2" />
