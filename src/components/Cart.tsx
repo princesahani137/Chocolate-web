@@ -16,7 +16,7 @@ const Cart = () => {
 
   try {
     // create order on server
-    const res = await fetch(`${import.meta.env.VITE_API_URL}/create-order`, {
+    const res = await fetch(`₹{import.meta.env.VITE_API_URL}/create-order`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ amount: total }) // total from your cart
@@ -32,7 +32,7 @@ const Cart = () => {
       order_id: order.id,
       handler: (response: any) => {
         // response contains razorpay_payment_id, razorpay_order_id, razorpay_signature
-        toast({ title: "Payment succeeded", description: `Payment ID: ${response.razorpay_payment_id}` });
+        toast({ title: "Payment succeeded", description: `Payment ID: ₹{response.razorpay_payment_id}` });
         clearCart();
         // Optionally call server to verify signature / mark order paid
       },
@@ -84,7 +84,7 @@ const Cart = () => {
                     />
                     <div className="flex-1">
                       <h3 className="font-medium text-chocolate-800 text-sm">{item.name}</h3>
-                      <p className="text-chocolate-600 text-sm">${item.price.toFixed(2)}</p>
+                      <p className="text-chocolate-600 text-sm">₹{item.price.toFixed(2)}</p>
                       
                       <div className="flex items-center space-x-2 mt-2">
                         <button
@@ -104,7 +104,7 @@ const Cart = () => {
                     </div>
                     
                     <div className="text-right">
-                      <p className="font-medium text-chocolate-800">${(item.price * item.quantity).toFixed(2)}</p>
+                      <p className="font-medium text-chocolate-800">₹{(item.price * item.quantity).toFixed(2)}</p>
                       <button
                         onClick={() => removeItem(item.id)}
                         className="text-chocolate-500 hover:text-chocolate-700 mt-1"
@@ -123,20 +123,20 @@ const Cart = () => {
               <div className="space-y-2">
                 <div className="flex justify-between text-sm">
                   <span className="text-chocolate-600">Subtotal</span>
-                  <span className="text-chocolate-800">${subtotal.toFixed(2)}</span>
+                  <span className="text-chocolate-800">₹{subtotal.toFixed(2)}</span>
                 </div>
                 <div className="flex justify-between text-sm">
                   <span className="text-chocolate-600">Shipping</span>
                   <span className="text-chocolate-800">
-                    {shipping === 0 ? "Free" : `$${shipping.toFixed(2)}`}
+                    {shipping === 0 ? "Free" : `₹₹{shipping.toFixed(2)}`}
                   </span>
                 </div>
                 {shipping === 0 && (
-                  <p className="text-xs text-green-600">Free shipping on orders over $50!</p>
+                  <p className="text-xs text-green-600">Free shipping on orders over ₹50!</p>
                 )}
                 <div className="flex justify-between font-semibold text-lg border-t border-chocolate-200 pt-2">
                   <span className="text-chocolate-800">Total</span>
-                  <span className="text-chocolate-800">${total.toFixed(2)}</span>
+                  <span className="text-chocolate-800">₹{total.toFixed(2)}</span>
                 </div>
               </div>
               <div className="space-y-2">
